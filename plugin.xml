@@ -18,6 +18,7 @@
         <!-- ios -->
         <platform name="ios">
                 <source-file src="src/ios/libMonkeyTalk-1.0.47.a" framework="true" />
+                <framework src="libstdc++.6.0.9.dylib" />
         </platform>
 
 </plugin>
