@@ -21,4 +21,17 @@
                 <framework src="libstdc++.6.0.9.dylib" />
         </platform>
 
+        <!-- android -->
+        <platform name="android">
+                <config-file target="AndroidManifest.xml" parent="/manifest">
+                        <uses-permission android:name="android.permission.INTERNET" />
+                        <uses-permission android:name="android.permission.GET_TASKS" />
+                </config-file>
+                <source-file src="src/android/monkeytalk-agent.jar" target-dir="libs/" />
+                <source-file src="src/android/aspectjrt.jar" target-dir="aspectj/lib/" />
+                <source-file src="src/android/aspectjtools.jar" target-dir="aspectj/lib/" />
+                <source-file src="src/android/aspectjweaver.jar" target-dir="aspectj/lib/" />
+                <source-file src="src/android/custom_rules.xml" />
+        </platform>
+
 </plugin>
