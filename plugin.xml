@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.feedhenry.plugins.monkeytalk"
-        version="0.0.2">
+        version="0.0.3">
 
         <name>MonkeyTalk</name>
 
@@ -34,7 +34,7 @@
                 <source-file src="src/android/aspectjrt.jar" target-dir="aspectj/lib/" />
                 <source-file src="src/android/aspectjtools.jar" target-dir="aspectj/lib/" />
                 <source-file src="src/android/aspectjweaver.jar" target-dir="aspectj/lib/" />
-                <source-file src="src/android/custom_rules.xml" />
+                <source-file src="src/android/custom_rules.xml" target-dir=""/>
         </platform>
 
 </plugin>
